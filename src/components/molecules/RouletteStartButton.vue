@@ -1,7 +1,9 @@
 <template>
   <div class="roulette-start-button">
     <el-row>
-      <custom-button :buttonType="'primary'" :onClickFn="onClickButton">押す</custom-button>
+      <custom-button :buttonType="buttonType" :onClickFn="onClickButton">{{
+        started ? 'ストップ' : 'スタート'
+      }}</custom-button>
     </el-row>
   </div>
 </template>
@@ -18,12 +20,21 @@ import CustomButton from '../atoms/CustomButton.vue';
   },
 })
 export default class RouletteStartButton extends Vue {
+  public buttonType = 'primary';
+
+  public started = false;
+
   @Emit()
   public startRoulette(): void {}
 
+  @Emit()
+  public stopRoulette(): void {}
+
   public onClickButton(): void {
-    console.log('さらに押された');
-    this.startRoulette();
+    this.buttonType = !this.started ? 'danger' : 'primary';
+    !this.started ? this.startRoulette() : this.stopRoulette();
+
+    this.started = !this.started;
   }
 }
 </script>

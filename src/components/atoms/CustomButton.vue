@@ -16,7 +16,6 @@ export default class CustomButton extends Vue {
   public readonly onClickFn!: () => void;
 
   public async onClick() {
-    console.log('押された');
     this.onClickFn && (await this.onClickFn());
   }
 }

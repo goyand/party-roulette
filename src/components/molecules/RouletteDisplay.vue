@@ -20,13 +20,11 @@ export default class RouletteDisplay extends Vue {
   }
 
   public startShuffle() {
-    let counter = 0;
     const intervalId = setInterval(() => {
       this.shuffle();
-      if (counter >= 10) {
+      if (!this.isStarted) {
         clearInterval(intervalId);
       }
-      counter++;
     }, 100);
   }
 

@@ -1,7 +1,7 @@
 <template>
   <div id="roulette-template">
     <!-- ここにスタートボタン -->
-    <roulette-start-button @start-roulette="startRoulette" />
+    <roulette-start-button @start-roulette="startRoulette" @stop-roulette="stopRoulette" />
     <!-- ここに表示エリア -->
     <roulette-display :isStarted="isStarted" />
   </div>
@@ -24,6 +24,10 @@ export default class RouletteTemplate extends Vue {
 
   public startRoulette(): void {
     this.isStarted = true;
+  }
+
+  public stopRoulette(): void {
+    this.isStarted = false;
   }
 }
 </script>
