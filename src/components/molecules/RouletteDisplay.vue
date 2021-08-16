@@ -6,6 +6,7 @@
 
 <script lang="ts">
 import { Component, Prop, Vue, Watch } from 'vue-property-decorator';
+import { shuffle } from '../../utils/shuffle';
 
 @Component
 export default class RouletteDisplay extends Vue {
@@ -21,32 +22,11 @@ export default class RouletteDisplay extends Vue {
 
   public startShuffle() {
     const intervalId = setInterval(() => {
-      this.shuffle();
+      this.pickedMeesage = shuffle();
       if (!this.isStarted) {
         clearInterval(intervalId);
       }
-    }, 100);
-  }
-
-  public shuffle() {
-    const rand = this.getRankdomNumber();
-    const messages = [
-      'ありがとう',
-      'さようなら',
-      'こんにちは',
-      '楽しかった',
-      'こんばんは',
-      'またね',
-      'おはよう',
-      'ごめんなさい',
-      'また今度',
-      'どうも',
-    ];
-    this.pickedMeesage = messages[rand];
-  }
-
-  public getRankdomNumber() {
-    return Math.floor(Math.random() * 10);
+    }, 50);
   }
 }
 </script>

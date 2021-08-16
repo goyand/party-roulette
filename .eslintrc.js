@@ -14,7 +14,9 @@ module.exports = {
     'class-methods-use-this': 'off',
     'space-before-function-paren': 'off',
     'no-unused-expressions': 'off',
-    '@typescript-eslint/no-empty-function': 'off',
     'no-plusplus': 'off',
+    'import/prefer-default-export': 'off',
+    'arrow-body-style': 'off',
+    '@typescript-eslint/no-empty-function': 'off',
   },
 };
