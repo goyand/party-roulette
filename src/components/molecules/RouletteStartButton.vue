@@ -38,5 +38,3 @@ export default class RouletteStartButton extends Vue {
   }
 }
 </script>
-
-<style></style>

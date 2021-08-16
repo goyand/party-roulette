@@ -29,5 +29,3 @@ export default class RouletteTemplate extends Vue {
   }
 }
 </script>
-
-<style></style>

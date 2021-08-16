@@ -20,5 +20,3 @@ export default class CustomButton extends Vue {
   }
 }
 </script>
-
-<style></style>
