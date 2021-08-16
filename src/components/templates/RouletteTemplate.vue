@@ -1,9 +1,7 @@
 <template>
   <div id="roulette-template">
-    <!-- ここにスタートボタン -->
-    <roulette-start-button @start-roulette="startRoulette" @stop-roulette="stopRoulette" />
-    <!-- ここに表示エリア -->
     <roulette-display :isStarted="isStarted" />
+    <roulette-start-button @start-roulette="startRoulette" @stop-roulette="stopRoulette" />
   </div>
 </template>
 

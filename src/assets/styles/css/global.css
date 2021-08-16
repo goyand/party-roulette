@@ -18,4 +18,25 @@
 #nav a.router-link-exact-active {
   color: #42b983;
 }
+
+.roulette-start-button button {
+  width: 60%;
+  border-radius: 0.5rem;
+  margin: 10px;
+}
+
+.roulette-display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  height: 60px;
+}
+
+.roulette-display div {
+  width: 75%;
+  padding: 10px;
+  border-bottom: solid 1px gray;
+}
 /*# sourceMappingURL=global.css.map */

@@ -1,6 +1,8 @@
 <template>
-  <div>
-    <span>{{ pickedMeesage }}</span>
+  <div class="roulette-display">
+    <div>
+      {{ pickedMeesage }}
+    </div>
   </div>
 </template>
 
