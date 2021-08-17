@@ -6,4 +6,8 @@ module.exports = {
       },
     },
   },
+  publicPath:
+    process.env.NODE_ENV === 'production'
+      ? '/party-roulette/' // 任意
+      : '/',
 };
