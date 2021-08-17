@@ -12,7 +12,7 @@ import { shuffle } from '../../utils/shuffle';
 
 @Component
 export default class RouletteDisplay extends Vue {
-  public pickedMeesage = '何が出るかな';
+  public pickedMeesage = 'ルーレットを回してください';
 
   @Prop({ type: Boolean, default: false })
   public isStarted!: boolean;
@@ -32,5 +32,3 @@ export default class RouletteDisplay extends Vue {
   }
 }
 </script>
-
-<style></style>

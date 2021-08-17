@@ -1,6 +1,10 @@
 <template>
   <div id="app">
-    <div id="nav"><router-link to="/">Home</router-link></div>
+    <div id="nav-title">
+      <h2>
+        Party Roulette
+      </h2>
+    </div>
     <router-view />
   </div>
 </template>

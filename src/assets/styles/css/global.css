@@ -6,23 +6,20 @@
   color: #2c3e50;
 }
 
-#nav {
+#nav-title {
   padding: 30px;
 }
 
-#nav a {
+#nav-title h2 {
   font-weight: bold;
   color: #2c3e50;
 }
 
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
-
 .roulette-start-button button {
-  width: 60%;
+  width: 80%;
   border-radius: 0.5rem;
   margin: 10px;
+  max-width: 450px;
 }
 
 .roulette-display {

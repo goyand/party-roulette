@@ -6,15 +6,11 @@
   color: #2c3e50;
 }
 
-#nav {
+#nav-title {
   padding: 30px;
 }
 
-#nav a {
+#nav-title h2 {
   font-weight: bold;
   color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
 }
